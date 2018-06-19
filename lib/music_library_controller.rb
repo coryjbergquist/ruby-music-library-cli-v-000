@@ -117,11 +117,11 @@ class MusicLibraryController
     song_number = song_number_get - 1
     binding.pry
 
-    song_list = Song.all.sort
+  
     binding.pry
-      # Song.all.map do |x|
-      #   song_list[x.name] = x.artist.name  maybe don't need
-      # end
+      Song.all.map do |x|
+        song_list[x.name] = x.artist.name  
+      end
         ordered_list = Hash[song_list.sort]
       if song_number.between?(1, song_count)
           puts "Playing #{ordered_list.keys[song_number]} by #{ordered_list.values[song_number]}"
