@@ -115,6 +115,8 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     song_number_get = gets.chomp.strip.to_i
     song_number = song_number_get - 1
+    binding.pry
+
     song_list = Song.all.sort
     binding.pry
       # Song.all.map do |x|
