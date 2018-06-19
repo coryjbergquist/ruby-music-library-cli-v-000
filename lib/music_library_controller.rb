@@ -115,7 +115,7 @@ class MusicLibraryController
     song_number_get = -1
     song_count = Song.all.count
     puts "Which song number would you like to play?"
-    song_number_get = gets.chomp.strip.to_i
+    song_number_get = gets.strip.to_i
     song_number = song_number_get - 1
     Song.all.map do |x|
       song_list[x.name] = x.artist.name
