@@ -23,6 +23,7 @@ class MusicLibraryController
     self.list_genres if a == "list genres"
     self.list_songs_by_artist if a == "list artist"
     self.list_songs_by_genre if a == "list genre"
+    self.play_song if a == "play song"
 
     end
   end
