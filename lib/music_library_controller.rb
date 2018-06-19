@@ -19,6 +19,7 @@ class MusicLibraryController
     puts "What would you like to do?"
     a = gets.strip
     self.list_songs if a = "list songs"
+    binding.pry
     end
   end
 
