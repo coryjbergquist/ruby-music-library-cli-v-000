@@ -7,9 +7,6 @@ class MusicLibraryController
 
   def call
     a = nil
-    if a = "list songs"
-      self.list_songs
-    end
     until a == "exit"
     puts "Welcome to your music library!"
     puts "To list all of your songs, enter 'list songs'."
