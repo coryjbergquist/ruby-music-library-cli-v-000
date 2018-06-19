@@ -123,10 +123,6 @@ class MusicLibraryController
     binding.pry
     if song_number.between?(1, song_count)
       puts "Playing #{ordered_list.keys[song_number]} by #{ordered_list.values[song_number]}"
-
-    else
-
-      end
     end
 
 end
