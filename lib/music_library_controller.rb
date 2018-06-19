@@ -19,9 +19,6 @@ class MusicLibraryController
     puts "What would you like to do?"
     a = gets.strip
     end
-    if a = "list songs"
-      self.list_songs
-    end
   end
 
   def list_songs
