@@ -120,10 +120,10 @@ class MusicLibraryController
       song_list[x.name] = x.artist.name
     end
     ordered_list = Hash[song_list.sort]
-    if song_number.between?(1, song_count)
-      puts "Playing #{ordered_list.keys[song_number]} by #{ordered_list.values[song_number]}"
+    if !song_number.between?(1, song_count)
+      
     else
-      puts ""
+      puts "Playing #{ordered_list.keys[song_number]} by #{ordered_list.values[song_number]}"
     end
   end
 
