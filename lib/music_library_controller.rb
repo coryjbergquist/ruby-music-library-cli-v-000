@@ -20,7 +20,6 @@ class MusicLibraryController
     a = gets.strip
     binding.pry
     self.list_songs if a = "list songs"
-    binding.pry
     end
   end
 
