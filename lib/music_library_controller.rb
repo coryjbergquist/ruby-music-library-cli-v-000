@@ -18,6 +18,7 @@ class MusicLibraryController
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
     a = gets.strip
+    self.list_songs if a = "list songs"
     end
   end
 
