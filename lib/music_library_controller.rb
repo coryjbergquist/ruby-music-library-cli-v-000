@@ -41,7 +41,6 @@ class MusicLibraryController
     list = b.map do |song_name, artist_name|
       num += 1
       puts "#{num}. #{artist_name.keys.join} - #{song_name} - #{artist_name.values.join}"
-      # "#{num}. #{artist_name.keys.join} - #{song_name} - #{artist_name.values.join}"
     end
       list
   end
